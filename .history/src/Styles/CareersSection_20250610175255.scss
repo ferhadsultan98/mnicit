@@ -1,0 +1,525 @@
+// Variables
+$primary-color: #495d73;
+$primary-light: lighten($primary-color, 10%);
+$primary-dark: darken($primary-color, 15%);
+$secondary-color: #6c7b8a;
+$accent-color: #8fa3b3;
+$success-color: #48bb78;
+$warning-color: #ed8936;
+$error-color: #f56565;
+$white: #ffffff;
+$light-bg: #f8fafc;
+$gray-50: #f9fafb;
+$gray-100: #f4f6f8;
+$gray-200: #e2e8f0;
+$gray-300: #cbd5e0;
+$gray-400: #a0aec0;
+$gray-500: #718096;
+$gray-600: #4a5568;
+$gray-700: #2d3748;
+$gray-800: #1a202c;
+$text-primary: #2d3748;
+$text-secondary: #4a5568;
+$text-light: #718096;
+$shadow-light: rgba(73, 93, 115, 0.08);
+$shadow-medium: rgba(73, 93, 115, 0.12);
+$shadow-heavy: rgba(73, 93, 115, 0.2);
+
+// Mixins
+@mixin transition($property: all, $duration: 0.3s, $easing: ease) {
+  transition: $property $duration $easing;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin card-shadow {
+  box-shadow: 0 4px 20px $shadow-light;
+}
+
+@mixin hover-lift {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px $shadow-medium;
+}
+
+@mixin gradient-bg($color1, $color2) {
+  background: linear-gradient(135deg, $color1 0%, $color2 100%);
+}
+
+// Main Section
+.careersSection {
+  padding: 100px 0;
+  background: linear-gradient(to bottom, #abcaeb 0%, #f8fafc 100%);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+
+    pointer-events: none;
+  }
+}
+
+// Container
+.careersContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+// Header Section
+.careersHeader {
+ 
+  margin-bottom: 80px;
+
+  .careersTitle {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 24px;
+
+    @include gradient-bg($primary-color, $primary-light);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .careersSubtitle {
+    font-size: clamp(1.1rem, 2.5vw, 1.2rem);
+    color: $text-secondary;
+    max-width: 700px;
+    line-height: 1.7;
+  }
+}
+
+// Culture Section
+.cultureSection {
+  margin-bottom: 80px;
+
+  .cultureContent {
+    @include gradient-bg($white, rgba($primary-color, 0.02));
+    border-radius: 24px;
+    padding: 50px;
+    @include card-shadow;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+    border: 1px solid rgba($primary-color, 0.1);
+
+    .cultureText {
+      h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: $text-primary;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: $text-secondary;
+      }
+    }
+
+    .cultureStats {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+
+      .statItem {
+        text-align: center;
+        padding: 20px;
+        border-radius: 16px;
+        background: rgba($primary-color, 0.05);
+        border: 1px solid rgba($primary-color, 0.1);
+        @include transition();
+
+        &:hover {
+          @include hover-lift();
+          background: rgba($primary-color, 0.08);
+        }
+
+        .statNumber {
+          display: block;
+          font-size: 2.5rem;
+          font-weight: 700;
+          color: $primary-color;
+          margin-bottom: 8px;
+        }
+
+        .statLabel {
+          font-size: 0.9rem;
+          color: $text-light;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+// Benefits Section
+.benefitsSection {
+  margin-bottom: 80px;
+
+  .benefitsTitle {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: $text-primary;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .benefitsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+
+  .benefitCard {
+    background: $white;
+    border-radius: 20px;
+    padding: 32px 24px;
+    text-align: center;
+    @include card-shadow;
+    @include transition();
+    border: 1px solid rgba($primary-color, 0.1);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      @include gradient-bg($primary-color, $accent-color);
+      transform: scaleX(0);
+      @include transition(transform);
+    }
+
+    &:hover {
+      @include hover-lift();
+
+      &::before {
+        transform: scaleX(1);
+      }
+
+      .benefitIcon {
+        transform: scale(1.1);
+        color: $primary-color;
+      }
+    }
+
+    .benefitIcon {
+      width: 64px;
+      height: 64px;
+      @include flexCenter;
+      margin: 0 auto 20px;
+      font-size: 1.8rem;
+      color: $accent-color;
+      background: rgba($primary-color, 0.1);
+      border-radius: 50%;
+      @include transition();
+    }
+
+    .benefitTitle {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: $text-primary;
+      margin-bottom: 12px;
+    }
+
+    .benefitDesc {
+      font-size: 0.95rem;
+      color: $text-secondary;
+      line-height: 1.5;
+    }
+  }
+}
+
+
+
+
+
+
+// Responsive Design
+@media (max-width: 1024px) {
+  .careersSection {
+    padding: 60px 0;
+  }
+
+  .careersContainer {
+    padding: 0 16px;
+  }
+
+  .careersHeader {
+    margin-bottom: 60px;
+
+    .careersTitle {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+    }
+
+    .careersSubtitle {
+      font-size: clamp(1rem, 2vw, 1.1rem);
+    }
+  }
+
+  .cultureSection {
+    .cultureContent {
+      grid-template-columns: 1fr;
+      padding: 32px;
+      gap: 32px;
+
+      .cultureStats {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+    }
+  }
+
+  .benefitsSection {
+    .benefitsGrid {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+  }
+
+  .jobFilters {
+    .departmentTabs {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+  }
+
+  .jobCard {
+    padding: 24px;
+
+    .jobCardHeader {
+      flex-direction: column;
+      gap: 16px;
+
+      .jobLevel {
+        align-self: flex-start;
+      }
+    }
+  }
+
+  .careersFooter {
+    padding: 40px 16px;
+    margin-top: 40px;
+
+    .ctaButtons {
+      flex-direction: column;
+      gap: 12px;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .careersSection {
+    padding: 40px 0;
+  }
+
+  .careersHeader {
+    margin-bottom: 40px;
+  }
+
+  .cultureSection {
+    margin-bottom: 60px;
+
+    .cultureContent {
+      padding: 24px;
+    }
+  }
+
+  .benefitsSection {
+    margin-bottom: 60px;
+
+    .benefitsTitle {
+      font-size: 1.8rem;
+    }
+
+    .benefitCard {
+      padding: 24px 16px;
+    }
+  }
+
+  .jobFilters {
+    .jobsTitle {
+      font-size: 1.8rem;
+    }
+
+    .filtersContainer {
+      gap: 16px;
+    }
+
+    .searchBox {
+      max-width: 100%;
+    }
+
+    .departmentTabs {
+      gap: 8px;
+
+      .departmentTab {
+        padding: 10px 16px;
+        font-size: 0.85rem;
+
+        .tabCount {
+          font-size: 0.75rem;
+        }
+      }
+    }
+
+    .levelFilter {
+      max-width: 180px;
+
+      .levelSelect {
+        padding: 12px 16px 12px 40px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .jobListings {
+    gap: 16px;
+  }
+
+  .jobCard {
+    .jobCardHeader {
+      .jobInfo {
+        .jobIcon {
+          width: 48px;
+          height: 48px;
+          font-size: 1.2rem;
+        }
+
+        .jobBasics {
+          .jobTitle {
+            font-size: 1.2rem;
+          }
+
+          .jobMeta {
+            flex-direction: column;
+            gap: 8px;
+          }
+        }
+      }
+    }
+
+    .jobDescription {
+      font-size: 0.95rem;
+    }
+
+    .jobRequirements {
+      font-size: 0.85rem;
+
+      ul li {
+        font-size: 0.85rem;
+      }
+    }
+
+    .jobCardFooter {
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+
+      .applyButton {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+
+  .careersFooter {
+    padding: 32px 12px;
+    margin-top: 32px;
+
+    h3 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .ctaButtons {
+      flex-direction: column;
+      gap: 12px;
+
+      button {
+        width: 100%;
+        padding: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .careersSection {
+    padding: 24px 0;
+  }
+
+  .careersContainer {
+    padding: 0 12px;
+  }
+
+  .cultureSection {
+    .cultureContent {
+      padding: 16px;
+    }
+
+    .cultureStats {
+      gap: 16px;
+
+      .statItem {
+        padding: 16px;
+      }
+    }
+  }
+
+  .benefitsSection {
+    .benefitsGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .jobCard {
+    padding: 16px;
+  }
+
+  .careersFooter {
+    padding: 24px 12px;
+    margin-top: 24px;
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+
+    .ctaButtons {
+      gap: 8px;
+
+      button {
+        padding: 10px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

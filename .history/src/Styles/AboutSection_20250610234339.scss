@@ -1,0 +1,430 @@
+.aboutSection {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
+  overflow: hidden;
+
+
+.aboutSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(73, 93, 115, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(73, 93, 115, 0.1) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.headerContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.headerText {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.mainTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.highlight {
+  color: #495d73;
+  position: relative;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #495d73, #6c7b8a);
+  border-radius: 2px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: start;
+}
+
+.headerVisual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visualElement {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.floatingCard {
+  position: absolute;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(73, 93, 115, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: #495d73;
+  animation: float 3s ease-in-out infinite;
+}
+
+.floatingCard:nth-child(1) {
+  top: 20px;
+  left: 20px;
+  animation-delay: 0s;
+}
+
+.floatingCard:nth-child(2) {
+  top: 100px;
+  right: 20px;
+  animation-delay: 1s;
+}
+
+.floatingCard:nth-child(3) {
+  bottom: 20px;
+  left: 50px;
+  animation-delay: 2s;
+}
+
+.cardIcon {
+  width: 24px;
+  height: 24px;
+  color: #495d73;
+}
+
+
+
+
+
+
+.mainContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.contentTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.contentDescription {
+  font-size: 1.1rem;
+  color: #6c757d;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  text-align: start;
+}
+
+.featuresList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+  color: #495d73;
+  text-align: start;
+}
+
+.checkIcon {
+  width: 20px;
+  height: 20px;
+  color: #28a745;
+}
+
+.ctaButton {
+  background: linear-gradient(135deg, #495d73, #6c7b8a);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(73, 93, 115, 0.4);
+}
+
+.buttonIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.visualCard {
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(73, 93, 115, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f8f9fa;
+}
+
+.cardHeaderIcon {
+  width: 32px;
+  height: 32px;
+  color: #495d73;
+}
+
+.cardHeader span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.cardContent p {
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.teamStats {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #495d73;
+  font-weight: 500;
+}
+
+.statIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.clientsSection {
+  margin-bottom: 80px;
+}
+
+.clientsTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.clientsSlider {
+  overflow: hidden;
+  position: relative;
+}
+
+.sliderTrack {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.clientCard {
+  flex: 0 0 auto;
+  margin: 0 15px;
+}
+
+.clientLogo {
+  height: 50px;
+  object-fit: contain;
+}
+
+.achievementsSection {
+  background: white;
+  padding: 60px 40px;
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(73, 93, 115, 0.1);
+}
+
+.achievementsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.achievementCard {
+  text-align: center;
+  position: relative;
+}
+
+.achievementCard::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 60px;
+  background: #e9ecef;
+  transform: translateY(-50%);
+}
+
+.achievementCard:last-child::after {
+  display: none;
+}
+
+.achievementNumber {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #495d73;
+  margin-bottom: 10px;
+}
+
+.achievementLabel {
+  color: #6c757d;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .headerContent,
+  .mainContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .mainTitle {
+    font-size: 3rem;
+  }
+  .contentTitle {
+    font-size: 2.2rem;
+    text-align: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    padding: 60px 0;
+  }
+  .container {
+    padding: 0 15px;
+  }
+  .mainTitle {
+    font-size: 2.5rem;
+  }
+  .contentTitle {
+    font-size: 2rem;
+    text-align: start;
+  }
+  .visualElement {
+    width: 250px;
+    height: 250px;
+  }
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+  .featuresList {
+    grid-template-columns: 1fr;
+  }
+  .achievementsGrid {
+    grid-template-columns: 1fr;
+  }
+  .achievementCard::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainTitle {
+    font-size: 2rem;
+    text-align: start;
+  }
+  .contentTitle {
+    font-size: 1.8rem;
+  }
+  .visualCard {
+    padding: 25px;
+  }
+  .achievementsSection {
+    padding: 40px 20px;
+  }
+}

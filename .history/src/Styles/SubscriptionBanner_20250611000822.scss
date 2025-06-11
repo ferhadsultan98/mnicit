@@ -1,0 +1,77 @@
+.subscription-banner {
+  background-color: #495d73cb;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+
+  .banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+
+      input {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        flex-grow: 1;
+        max-width: 300px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #ffffff;
+        color: #495d73cb;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #e0e0e0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .banner-content {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      form {
+        flex-direction: column;
+        gap: 10px;
+
+        input {
+          max-width: 100%;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

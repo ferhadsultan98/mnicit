@@ -1,0 +1,117 @@
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff;
+  background: #1a2a3a;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .accordion-title {
+    border-bottom: 1px solid #2e4057;
+
+    .accordion-header {
+      padding: 15px 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #2e4057;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: #3c5069;
+      }
+
+      .accordion-icon {
+        transition: transform 0.3s ease;
+      }
+
+      &.open {
+        .accordion-icon {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      padding: 0 20px;
+      background: #23344a;
+
+      &.open {
+        max-height: 200px;
+        padding: 15px 20px;
+      }
+
+      p {
+        margin: 10px 0;
+        color: #b0c4de;
+      }
+    }
+  }
+
+  .accordion-item {
+    border-bottom: 1px solid #2e4057;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .accordion-header {
+      padding: 15px 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #2e4057;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: #3c5069;
+      }
+
+      .accordion-icon {
+        transition: transform 0.3s ease;
+      }
+
+      &.open {
+        .accordion-icon {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      padding: 0 20px;
+      background: #23344a;
+
+      &.open {
+        max-height: 200px;
+        padding: 15px 20px;
+      }
+
+      p {
+        margin: 10px 0;
+        color: #b0c4de;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .accordion {
+    max-width: 100%;
+    .accordion-header {
+      padding: 10px 15px;
+    }
+    .accordion-content {
+      padding: 10px 15px;
+    }
+  }
+}

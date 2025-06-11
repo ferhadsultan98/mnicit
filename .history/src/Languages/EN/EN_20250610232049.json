@@ -1,0 +1,111 @@
+{
+  "header": {
+    "services": "Services",
+    "careers": "Careers",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+   "home": {
+    "heading": "Innovate, Excel in Competition, Achieve Success!",
+    "paragraph": "We optimize your business processes with ERP systems, making your company more efficient and competitive. Our tailored and reliable solutions support your sustainable growth.",
+    "button": "Partnership"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "With our team specialized in every field of the technology world, we offer you the best solutions",
+    "footerText": "Looking for a tailored solution for your project? Contact us immediately!",
+    "ctaButton": "Get Free Consultation",
+    "servicesData": [
+      {
+        "id": 1,
+        "title": "SAP System Implementation and Technical Support",
+        "description": "SAP system implementation and technical support services.",
+        "features": [
+          "Implementation Optimization",
+          "Technical Support",
+          "Potential Issues"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "SAP Module Enhancement and Configuration",
+        "description": "SAP module enhancement and configuration services.",
+        "features": [
+          "Operational Optimization",
+          "Module Configuration",
+          "Process Standardization"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Comprehensive SAP ERP Employee Training",
+        "description": "Comprehensive SAP ERP employee training services.",
+        "features": [
+          "Programming Training",
+          "System Integration",
+          "User Support"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Technology Solutions and Integration",
+        "description": "Technology solutions and integration services.",
+        "features": [
+          "Product Optimization",
+          "Integration Support",
+          "Data Facility"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Comprehensive Consulting Services",
+        "description": "We offer comprehensive consulting services.",
+        "features": [
+          "Strategic Consulting",
+          "Optimization Support",
+          "Market Analysis"
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Software and Web Services",
+        "description": "We offer software and web services.",
+        "features": [
+          "Application Development",
+          "Web Service Integration",
+          "Process Optimization"
+        ]
+      },
+      {
+        "id": 7,
+        "title": "UX/UI and Graphic Design",
+        "description": "UX/UI and graphic design services.",
+        "features": [
+          "User Experience",
+          "Graphic Design",
+          "Visual Identity"
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Network and System Architecture Solutions",
+        "description": "Network and system architecture solutions.",
+        "features": [
+          "Infrastructure Design",
+          "Performance Optimization",
+          "Data Security"
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Cloud and IT Infrastructure Services",
+        "description": "Cloud and IT infrastructure services.",
+        "features": [
+          "Data Storage",
+          "Infrastructure Management",
+          "Performance Enhancement"
+        ]
+      }
+    ]
+  }
+}

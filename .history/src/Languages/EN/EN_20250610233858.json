@@ -1,0 +1,226 @@
+{
+  "header": {
+    "services": "Services",
+    "careers": "Careers",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+   "home": {
+    "heading": "Innovate, Excel in Competition, Achieve Success!",
+    "paragraph": "We optimize your business processes with ERP systems, making your company more efficient and competitive. Our tailored and reliable solutions support your sustainable growth.",
+    "button": "Partnership"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "With our team specialized in every field of the technology world, we offer you the best solutions",
+    "footerText": "Looking for a tailored solution for your project? Contact us immediately!",
+    "ctaButton": "Get Free Consultation",
+    "servicesData": [
+      {
+        "id": 1,
+        "title": "SAP System Implementation and Technical Support",
+        "description": "SAP system implementation and technical support services.",
+        "features": [
+          "Implementation Optimization",
+          "Technical Support",
+          "Potential Issues"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "SAP Module Enhancement and Configuration",
+        "description": "SAP module enhancement and configuration services.",
+        "features": [
+          "Operational Optimization",
+          "Module Configuration",
+          "Process Standardization"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Comprehensive SAP ERP Employee Training",
+        "description": "Comprehensive SAP ERP employee training services.",
+        "features": [
+          "Programming Training",
+          "System Integration",
+          "User Support"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Technology Solutions and Integration",
+        "description": "Technology solutions and integration services.",
+        "features": [
+          "Product Optimization",
+          "Integration Support",
+          "Data Facility"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Comprehensive Consulting Services",
+        "description": "We offer comprehensive consulting services.",
+        "features": [
+          "Strategic Consulting",
+          "Optimization Support",
+          "Market Analysis"
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Software and Web Services",
+        "description": "We offer software and web services.",
+        "features": [
+          "Application Development",
+          "Web Service Integration",
+          "Process Optimization"
+        ]
+      },
+      {
+        "id": 7,
+        "title": "UX/UI and Graphic Design",
+        "description": "UX/UI and graphic design services.",
+        "features": [
+          "User Experience",
+          "Graphic Design",
+          "Visual Identity"
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Network and System Architecture Solutions",
+        "description": "Network and system architecture solutions.",
+        "features": [
+          "Infrastructure Design",
+          "Performance Optimization",
+          "Data Security"
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Cloud and IT Infrastructure Services",
+        "description": "Cloud and IT infrastructure services.",
+        "features": [
+          "Data Storage",
+          "Infrastructure Management",
+          "Performance Enhancement"
+        ]
+      }
+    ]
+  },
+   "careers": {
+    "title": "Shape Your Career With Us",
+    "subtitle": "Join our dynamic team at the forefront of SAP and non-SAP services! We offer a range of career opportunities that empower innovation and growth in a collaborative environment. Discover your potential with us and shape your future in the field of business solutions!",
+    "cultureTitle": "Why Work With Us?",
+    "cultureText": "Be part of a passionate, continuously learning, and evolving team. Work with cutting-edge technologies, showcase your creativity, and take your career to the next level.",
+    "cultureStats": [
+      { "number": "50+", "label": "Team Members" },
+      { "number": "100+", "label": "Completed Projects" },
+      { "number": "5+", "label": "Years of Experience" }
+    ],
+    "benefitsTitle": "Employee Benefits",
+    "benefits": [
+      { "title": "Career Growth in the IT Industry" },
+      { "title": "Innovative Work Environment and Team Culture" },
+      { "title": "Flexible Work Conditions and Continuous Learning" }
+    ]
+  },
+  "about": {
+    "title": "ABOUT US",
+    "subtitle": "MN ICIT is committed to advancing your business with innovative solutions and professional consulting. Our expert team uses cutting-edge technologies to deliver precise and high-quality results for every project. We focus on your success and growth by providing tailored support in system optimization and project management.",
+    "contentTitle": "Why Choose Our IT Solutions?",
+    "contentDescription": "With years of experience in the IT industry, we provide comprehensive solutions that drive business growth and digital transformation. Our team of certified professionals ensures your technology infrastructure is robust, secure, and scalable.",
+    "features": [
+      "Expert technical team",
+      "Cutting-edge technologies",
+      "Agile development process",
+      "Quality assurance testing",
+      "Continuous technical support",
+      "Competitive pricing"
+    ],
+    "ctaButton": "Get Started",
+    "visuals": {
+      "innovation": "Innovation",
+      "security": "Security",
+      "performance": "Performance"
+    },
+    "teamTitle": "Our Team",
+    "teamDescription": "Professional experts ready to tackle your challenges",
+    "teamStats": {
+      "certified": "Certified Professionals"
+    },
+    "achievements": [
+      { "number": "150+", "label": "Completed Projects" },
+      { "number": "98%", "label": "Customer Satisfaction" },
+      { "number": "5+", "label": "Years of Experience" },
+      { "number": "24/7", "label": "Support Available" }
+    ]
+  },
+   "contact": {
+    "title": "Contact Us",
+    "subtitle": "Ready to transform your business with innovative IT solutions? Let's discuss your project and create something amazing together.",
+    "formTitle": "Send Us a Message",
+    "formDescription": "We will respond within 24 hours",
+    "successMessage": {
+      "title": "Message Sent Successfully!",
+      "description": "Thank you for contacting us. We will get back to you shortly."
+    },
+    "formLabels": {
+      "name": "Full Name *",
+      "email": "Email Address *",
+      "company": "Company Name",
+      "service": "Service Interests",
+      "message": "Project Details *"
+    },
+    "formPlaceholders": {
+      "name": "Enter your full name",
+      "email": "Enter your email address",
+      "company": "Enter your company name",
+      "service": "Select a service",
+      "message": "Tell us about your project, requirements, and timeline..."
+    },
+    "submitButton": {
+      "default": "Send Message",
+      "submitting": "Sending..."
+    },
+    "contactInfo": [
+      {
+        "title": "Email Address",
+        "details": ["info@itservices.com", "support@itservices.com"],
+        "link": "mailto:info@itservices.com"
+      },
+      {
+        "title": "Phone Number",
+        "details": ["+1 (555) 123-4567", "+1 (555) 987-6543"],
+        "link": "tel:+15551234567"
+      },
+      {
+        "title": "Office Address",
+        "details": ["123 Technology Street", "San Francisco, CA 94102"],
+        "link": "https://maps.google.com"
+      },
+      {
+        "title": "Working Hours",
+        "details": ["Mon - Fri: 09:00 - 18:00", "Sat: 10:00 - 16:00"],
+        "link": null
+      }
+    ],
+    "services": [
+      "Web Development",
+      "Mobile App Development",
+      "Cloud Solutions",
+      "Cybersecurity",
+      "IT Consulting",
+      "System Integration",
+      "Digital Marketing",
+      "Other"
+    ],
+    "socialTitle": "Follow Us",
+    "socialLinks": [
+      { "name": "LinkedIn", "link": "#" },
+      { "name": "Twitter", "link": "#" },
+      { "name": "Facebook", "link": "#" },
+      { "name": "Website", "link": "#" }
+    ]
+  }
+}

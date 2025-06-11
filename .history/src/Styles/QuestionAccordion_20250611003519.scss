@@ -1,0 +1,299 @@
+// Base variables
+$primary-color: #2e4057;
+$primary-light: lighten($primary-color, 15%);
+$primary-dark: darken($primary-color, 10%);
+$accent-color: #4a90e2;
+$text-light: #ffffff;
+$text-dark: #333333;
+$text-muted: #666666;
+$background-light: #f8fafc;
+$border-light: rgba($primary-color, 0.1);
+$shadow-light: rgba($primary-color, 0.08);
+$shadow-medium: rgba($primary-color, 0.15);
+
+// Breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$large-desktop: 1200px;
+
+// Mixins
+@mixin transition($property: all, $duration: 0.3s, $timing: ease-in-out) {
+  transition: $property $duration $timing;
+}
+
+@mixin card-shadow($level: 1) {
+  @if $level == 1 {
+    box-shadow: 0 2px 8px $shadow-light;
+  } @else if $level == 2 {
+    box-shadow: 0 4px 16px $shadow-medium;
+  } @else if $level == 3 {
+    box-shadow: 0 8px 32px rgba($primary-color, 0.2);
+  }
+}
+
+@mixin button-hover($bg-color, $text-color: $text-light) {
+  background: linear-gradient(135deg, $bg-color, darken($bg-color, 8%));
+  color: $text-color;
+  transform: translateY(-1px);
+  @include card-shadow(2);
+}
+
+// Main container styling
+.questionMe {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: $primary-color;
+  text-align: center;
+  margin-bottom: clamp(1.5rem, 5vw, 3rem);
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(60px, 15vw, 120px);
+    height: 3px;
+    background: linear-gradient(90deg, $accent-color, $primary-color);
+    border-radius: 2px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.accordion {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 3vw, 1.5rem);
+  
+  @media (min-width: $tablet) {
+    max-width: 800px;
+  }
+  
+  @media (min-width: $desktop) {
+    max-width: 900px;
+  }
+  
+  @media (min-width: $large-desktop) {
+    max-width: 1000px;
+  }
+
+  .accordion-item {
+    background: $text-light;
+    border-radius: clamp(8px, 2vw, 16px);
+    margin-bottom: clamp(0.75rem, 2vw, 1.5rem);
+    overflow: hidden;
+    @include card-shadow(1);
+    @include transition();
+    border: 1px solid $border-light;
+
+    &:hover {
+      @include card-shadow(2);
+      transform: translateY(-2px);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .accordion-header {
+      padding: clamp(1rem, 3vw, 1.5rem) clamp(1rem, 3vw, 2rem);
+      background: linear-gradient(135deg, $primary-color, $primary-light);
+      color: $text-light;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+      font-weight: 600;
+      line-height: 1.4;
+      @include transition();
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+        @include transition(left, 0.6s);
+      }
+
+      &:hover {
+        @include button-hover($primary-dark);
+        
+        &::before {
+          left: 100%;
+        }
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+
+      @media (max-width: $mobile) {
+        padding: 1rem;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 360px) {
+        padding: 0.875rem;
+        font-size: 0.85rem;
+      }
+
+      .accordion-icon {
+        flex-shrink: 0;
+        margin-left: clamp(0.5rem, 2vw, 1rem);
+        font-size: clamp(1rem, 3vw, 1.25rem);
+        @include transition(transform, 0.3s, cubic-bezier(0.4, 0, 0.2, 1));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: clamp(24px, 6vw, 32px);
+        height: clamp(24px, 6vw, 32px);
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+
+        &.open {
+          transform: rotate(180deg);
+          background: rgba(255, 255, 255, 0.2);
+        }
+
+        @media (max-width: $mobile) {
+          margin-left: 0.5rem;
+          width: 24px;
+          height: 24px;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      @include transition(max-height, 0.4s, cubic-bezier(0.4, 0, 0.2, 1));
+      background: $background-light;
+
+      &.open {
+        max-height: 500px;
+        @include transition(max-height, 0.4s, cubic-bezier(0.4, 0, 0.2, 1));
+      }
+
+      p {
+        padding: clamp(1rem, 3vw, 1.5rem) clamp(1rem, 3vw, 2rem);
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: clamp(0.875rem, 2.2vw, 1rem);
+        line-height: 1.6;
+        color: $text-dark;
+        border-left: 3px solid $accent-color;
+        background: linear-gradient(90deg, rgba($accent-color, 0.05), transparent 50%);
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 3px;
+          height: 100%;
+          background: linear-gradient(180deg, $accent-color, $primary-color);
+        }
+
+        @media (max-width: $mobile) {
+          padding: 1rem;
+          font-size: 0.875rem;
+        }
+
+        @media (max-width: 360px) {
+          padding: 0.875rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    // Active state styling
+    &:has(.accordion-content.open) {
+      .accordion-header {
+        background: linear-gradient(135deg, $primary-dark, $primary-color);
+        @include card-shadow(2);
+      }
+    }
+  }
+}
+
+// Animation for smooth entrance
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.accordion-item {
+  animation: fadeInUp 0.5s ease-out forwards;
+  
+  @for $i from 1 through 5 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.1}s;
+    }
+  }
+}
+
+// Focus states for accessibility
+.accordion-header {
+  &:focus {
+    outline: 2px solid $accent-color;
+    outline-offset: 2px;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $accent-color;
+    outline-offset: 2px;
+  }
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+  .accordion-item {
+    border: 2px solid $primary-color;
+    
+    .accordion-header {
+      background: $primary-color;
+      border-bottom: 1px solid $primary-dark;
+    }
+    
+    .accordion-content p {
+      border-left-width: 4px;
+      background: $text-light;
+    }
+  }
+}
+
+// Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .accordion-header::before {
+    display: none;
+  }
+}

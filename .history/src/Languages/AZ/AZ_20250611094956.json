@@ -1,0 +1,283 @@
+{
+  "header": {
+    "services": "Xidmətlər",
+    "careers": "Karyera",
+    "about": "Haqqımızda",
+    "contact": "Əlaqə"
+  },
+  "home": {
+    "heading": "İnnovasiya et, Rəqabətdə üstün ol, Uğur əldə et!",
+    "paragraph": "ERP sistemləri ilə iş proseslərinizi optimallaşdırır, şirkətinizi daha səmərəli və rəqabətədavamlı hala gətiririk. Fərdiləşdirilmiş və etibarlı həllərimizlə davamlı inkişafınıza dəstək oluruq.",
+    "button": "Tərəfdaşlıq"
+  },
+  "services": {
+    "title": "Xidmətlərimiz",
+    "subtitle": "Texnologiya dünyasının hər sahəsində ixtisaslaşmış komandamızla sizə ən yaxşı həlləri təklif edirik",
+    "footerText": "Layihəniz üçün xüsusi həll axtarırsınız? Dərhal əlaqə saxlayın!",
+    "ctaButton": "Pulsuz Məsləhət Al",
+    "servicesData": [
+      {
+        "id": 1,
+        "title": "SAP Sistemlərinin Tətbiki və Texniki Dəsteyi",
+        "description": "SAP sistemlərinin tətbiki və texniki dəsteyi xidmətləri.",
+        "features": [
+          "Tətbik Optimizasiyası",
+          "Texniki Dəstək",
+          "Potensial Problemlər"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "SAP Modullarının Təkmilləşdirilməsi və Konfiqurasiyası",
+        "description": "SAP modullarının təkmilləşdirilməsi və konfiqurasiyası.",
+        "features": [
+          "Fəaliyyət Optimizasiyası",
+          "Modul Konfiqurasiyası",
+          "Proses Standartlaşdırma"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "SAP ERP Haqqında Ətraflı İşçi Təlimi",
+        "description": "SAP ERP haqqında ətraflı işçi təlimi xidmətləri.",
+        "features": [
+          "Proqramlama Təlimi",
+          "Sistem İntegrasiyası",
+          "İstifadəçi Dəstəyi"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Texnologiya Həlləri və İntegrasiya",
+        "description": "Texnologiya həlləri və inteqrasiya xidmətləri.",
+        "features": [
+          "Məhsul Optimizasiyası",
+          "İntegrasiya Dəstəyi",
+          "Məlumat Fasilitəsi"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Kompleks Məsləhət Xidmətləri",
+        "description": "Kompleks məsləhət xidmətləri təklif edirik.",
+        "features": [
+          "Strateji Məsləhət",
+          "Optimizasiya Dəstəyi",
+          "Bazar Təhlili"
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Proqram və Veb Xidməti",
+        "description": "Proqram və veb xidmətləri təklif edirik.",
+        "features": [
+          "Tətbiq İnkişafı",
+          "Veb Xidmət İntegrasiyası",
+          "Proses Optimizasiyası"
+        ]
+      },
+      {
+        "id": 7,
+        "title": "UX/UI və Qrafik Dizayn",
+        "description": "UX/UI və qrafik dizayn xidmətləri.",
+        "features": [
+          "İstifadəçi Təcrübəsi",
+          "Qrafik Dizayn",
+          "Vizual İdentifikasiya"
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Şəbəkə və Sistem Arxitektura Həlləri",
+        "description": "Şəbəkə və sistem arxitektura həlləri.",
+        "features": [
+          "İnfrastruktur Dizaynı",
+          "Performans Optimizasiyası",
+          "Məlumat Təhlükəsizliyi"
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Bulud və IT İnfrastruktur Xidmətləri",
+        "description": "Bulud və IT infrastruktur xidmətləri.",
+        "features": [
+          "Məlumat Saxlama",
+          "İnfrastruktur İdarəetmə",
+          "Performans Təkmilləşdirmə"
+        ]
+      }
+    ]
+  },
+  "careers": {
+    "title": "Karyeranızı Bizimlə Formalaşdırın",
+    "subtitle": "SAP və qeyri-SAP xidmətlərinin ön sıralarında olan dinamik komandamıza qoşulun! Biz sizə əməkdaşlıq mühitində yeniliklər etmək və yüksəliş üçün güc verən bir sıra karyera imkanları təklif edirik. Potensialınızı bizimlə kəşf edin və biznes həlləri sahəsində gələcəyinizi formalaşdırmağa nail olun!",
+    "cultureTitle": "Niyə Bizimlə İşləməlisiniz?",
+    "cultureText": "Texnologiyaya həvəsli, daim öyrənən və inkişaf edən komandanın bir hissəsi olun. Müasir texnologiyalarla işləyin, yaradıcılığınızı göstərin və karyeranızı növbəti səviyyəyə qaldırın.",
+    "cultureStats": [
+      { "number": "50+", "label": "Komanda Üzvü" },
+      { "number": "100+", "label": "Tamamlanmış Layihə" },
+      { "number": "5+", "label": "İllik Təcrübə" }
+    ],
+    "benefitsTitle": "İşçi Üstünlükləri",
+    "benefits": [
+      { "title": "İT Sənayesində Karyera Yüksəlişi" },
+      { "title": "İnnovativ İş Mühiti və Komanda Mədəniyyəti" },
+      { "title": "Çevik İş Şərtləri və Davamlı Öyrənmə" }
+    ]
+  },
+  "about": {
+    "title": "HAQQIMIZDA",
+    "subtitle": "MN ICIT, innovativ həllər və peşəkar məsləhətlər ilə biznesinizi inkişaf etdirməyə sadiqdir. Peşəkar komandamız hər layihə üçün dəqiq və yüksək keyfiyyətli nəticələr təmin etmək üçün ən müasir texnologiyalardan istifadə edir. Biz sistemlərin optimallaşdırılması və layihələrin idarə edilməsi ilə əlaqədar xüsusi dəstəyi təmin edərək sizin uğurunuza və böyüməyinizə fokuslanırıq.",
+    "contentTitle": "Niyə Bizim İT Həllərimizi Seçməlisiniz?",
+    "contentDescription": "İT sənayesində illərlə təcrübə ilə biz biznesin inkişafını və rəqəmsal transformasiyasını təmin edən hərtərəfli həllər təqdim edirik. Sertifikatlı mütəxəssislərimizdən ibarət komandamız texnologiya infrastrukturunuzun möhkəm, təhlükəsiz və ölçülənə bilən olmasını təmin edir.",
+    "features": [
+      "Ekspert texniki komanda",
+      "Ən müasir texnologiyalar",
+      "Çevik inkişaf prosesi",
+      "Keyfiyyət təminatı testi",
+      "Davamlı texniki dəstək",
+      "Rəqabətli qiymətləndirmə"
+    ],
+    "ctaButton": "Başla",
+    "visuals": {
+      "innovation": "İnnovasiya",
+      "security": "Təhlükəsizlik",
+      "performance": "Performans"
+    },
+    "teamTitle": "Komandamız",
+    "teamDescription": "Sizin çətinliklərinizi həll etməyə hazır peşəkar mütəxəssislər",
+    "teamStats": {
+      "certified": "Sertifikatlı Mütəxəssislər"
+    },
+    "achievements": [
+      { "number": "150+", "label": "Tamamlanmış Layihələr" },
+      { "number": "98%", "label": "Müştəri Məmnuniyyəti" },
+      { "number": "5+", "label": "İllik Təcrübə" },
+      { "number": "24/7", "label": "Dəstək Mövcuddur" }
+    ]
+  },
+  "contact": {
+    "title": "Bizimlə Əlaqə",
+    "subtitle": "Biznesinizi innovativ İT həlləri ilə dəyişdirməyə hazırsınızmı? Layihənizi müzakirə edək və birlikdə möhtəşəm bir şey yaradaq.",
+    "formTitle": "Bizə mesaj göndərin",
+    "formDescription": "24 saat ərzində sizə cavab verəcəyik",
+    "successMessage": {
+      "title": "Mesaj Uğurla Göndərildi!",
+      "description": "Bizimlə əlaqə saxladığınız üçün təşəkkür edirik. Tezliklə sizə cavab verəcəyik."
+    },
+    "formLabels": {
+      "name": "Tam Ad *",
+      "email": "E-poçt Ünvanı *",
+      "company": "Şirkət Adı",
+      "service": "Xidmət Maraqları",
+      "message": "Layihə Təfərrüatları *"
+    },
+    "formPlaceholders": {
+      "name": "Tam adınızı daxil edin",
+      "email": "E-poçt ünvanınızı daxil edin",
+      "company": "Şirkət adınızı daxil edin",
+      "service": "Xidmət seçin",
+      "message": "Layihəniz, tələbləriniz və zaman planınız haqqında bizə məlumat verin..."
+    },
+    "submitButton": {
+      "default": "Mesaj Göndər",
+      "submitting": "Göndərilir..."
+    },
+    "contactInfo": [
+      {
+        "title": "E-poçt Ünvanı",
+        "details": ["info@itservices.com", "support@itservices.com"],
+        "link": "mailto:info@itservices.com"
+      },
+      {
+        "title": "Telefon Nömrəsi",
+        "details": ["+994 50 233 32 53"],
+        "link": "tel:+994502333253"
+      },
+      {
+        "title": "Ofis Ünvanı",
+        "details": ["Bakı, Babək prospekti 85k"],
+        "link": "https://maps.google.com"
+      },
+      {
+        "title": "İş Saatları",
+        "details": ["B.e - C.: 09:00 - 18:00"],
+        "link": null
+      }
+    ],
+    "services": [
+      "SAP sistemlərinin tətbiqi və texniki dəstəyi",
+      "SAP modullarının qabaqcıl uyğunlaşdırılması və konfiqurasiyası",
+      "SAP ERP üzrə əməkdaşlar üçün dərin təlim proqramları",
+      "Texnoloji həllər və inteqrasiya",
+      "Əhatəli məsləhət xidmətləri",
+      "Tətbiq və veb xidmətləri",
+      "UX/UI və qrafik dizayn",
+      "Şəbəkə və sistem arxitekturası həlləri",
+      "Bulud və İT infrastruktur xidmətləri"
+    ],
+    "socialTitle": "Bizi İzləyin",
+    "socialLinks": [
+      { "name": "LinkedIn", "link": "#" },
+      { "name": "Twitter", "link": "#" },
+      { "name": "Facebook", "link": "#" },
+      { "name": "Veb Sayt", "link": "#" }
+    ]
+  },
+  "footer": {
+    "companyDescription": "Müasir IT həlləri və peşəkar xidmətlərlə biznesinizi gələcəyə hazırlayırıq. Texnologiya sahəsində 10+ il təcrübə.",
+    "servicesTitle": "Xidmətlərimiz",
+    "services": [
+      { "name": "Kibertəhlükəsizlik", "link": "#" },
+      { "name": "Cloud Həlləri", "link": "#" },
+      { "name": "Web Development", "link": "#" },
+      { "name": "Server İdarəetməsi", "link": "#" }
+    ],
+    "quickLinksTitle": "Sürətli Keçidlər",
+    "quickLinks": [
+      { "name": "Haqqımızda", "link": "#" },
+      { "name": "Portfel", "link": "#" },
+      { "name": "Blog", "link": "#" },
+      { "name": "Karyera", "link": "#" }
+    ],
+    "contactTitle": "Əlaqə",
+    "contactInfo": [
+      { "icon": "Phone", "value": "+994 50 233 32 53" },
+      { "icon": "Mail", "value": "info@mnicit.az" },
+      { "icon": "MapPin", "value": "Bakı, Babək prospekti 85k" }
+    ],
+    "bottomLinks": [
+      { "name": "Məxfilik Siyasəti", "link": "#" },
+      { "name": "İstifadə Şərtləri", "link": "#" }
+    ],
+    "socialLinks": [
+      { "name": "Facebook", "link": "#" },
+      { "name": "Twitter", "link": "#" },
+      { "name": "Linkedin", "link": "#" },
+      { "name": "Instagram", "link": "#" }
+    ]
+  },
+  "SubscriptionBanner": {
+    "title": "Abunə Olun Yeni Xəbərlər Üçün",
+    "description": "Premium dəstək, təkmilləşdirilmiş xidmətlər və siçan bulud xidmətlərinə giriş üçün abunə olun.",
+    "placeholder": "E-poçtunuzu daxil edin...",
+    "button": "Abunə Ol",
+    "success_message": "E-poçt göndərildi!"
+  },
+  "accordion": {
+    "questions": [
+      "SAP ERP nədir və biznesinizə necə fayda gətirir?",
+      "SAP ERP-də hansı əsas modullar mövcuddur?",
+      "SAP ERP-ni digər sistemlər və ya proqram təminatları ilə necə inteqrasiya edə bilərəm?",
+      "SAP ERP üçün hansı yerləşdirmə seçimləri var?",
+      "SAP ERP-nin uğurlu tətbiqatını necə təmin edə bilərəm?"
+    ],
+    "answers": [
+      "SAP ERP (Enterprise Resource Planning) müxtəlif biznes proseslərini idarə etmək və optimallaşdırmaq üçün nəzərdə tutulmuş inteqrasiyaya olunmuş tətbiqlər paketidir. Bu proseslərə maliyyə, insan resursları, tədarük zənciri və müştəri münasibətləri idarəçiliyi daxildir. Əsas üstünlüklərə artan effektivlik, real vaxt məlumat görünürlüğü, yaxşılaşdırılmış qərar qəbul etmə qabiliyyətləri və biznes əməliyyatlarının sadələşdirilməsi daxildir.",
+      "SAP Financial Accounting (FI): Maliyyə əməliyyatlarını və hesabatları idarə edir.\nSAP Controlling (CO): Daxili xərclərin idarəçiliyi və hesabatını həyata keçirir.\nSAP Sales and Distribution (SD): Satış sifarişləri, çatdırılmalar və fakturalama ilə məşğuldur.\nSAP Material Management (MM): Təchizat və anbar idarəçiliyinə nəzarət edir.\nSAP Production Planning (PP): İstehsal planlaması və nəzarətini koordina edir.\nSAP Human Capital Management (HCM): İşçi məlumatlarını, maaş və işə qəbulu idarə edir.",
+      "APIs (Proqramlaşdırma İnterfeysləri): Realtaym məlumat mübadiləsi üçün.\nAralıq Proqram təminatı: SAP PI/PO (Process Integration / Process Orchestration) kimi vasitələr inteqrasiyanı asanlaşdırır.\nMəlumat İnterfeysləri: Batch məlumat köçürməsi üçün IDocs (Intermediate Documents) kimi üsullar.\nXüsusi İnkişaf: Xüsusi inteqrasiya ehtiyaclarını qarşılamaq üçün həllər.",
+      "Yerində: Şirkətinizin serverlərində quraşdırılır və saxlanılır.\nBulud əsaslı: SAP-nin bulud infrastrukturu üzərində yerləşir, miqyaslanma və azaldılmış texniki xidmət təklif edir.\nHibrid: Yerində və bulud yerləşdirmələrinin qarışığı, biznes ehtiyaclarına uyğun çeviklik təmin edir.",
+      "Ətraflı Planlaşdırma: Aydın məqsəd, əhatə və müddət müəyyən edin.\nTərəfdaşların Cəlb Edilməsi: Əsas istifadəçiləri və maraqlı tərəfləri proses boyunca daxil edin.\nMəlumat Köçürülməsi: Köhnə sistemlərdən dəqiq və tam məlumat köçürülməsini təmin edin.\nXüsusi Təminat və Konfiqurasiya: Sistemi biznes tələblərinə uyğunlaşdırın.\nTəlim və Dəstək: İstifadəçilər üçün kifayət qədər təlim təmin edin və dəstək mexanizmləri qurun.\nTest Edilmə: Canlıya keçmədən əvvəl problemləri müəyyənləşdirmək və həll etmək üçün ətraflı test edin."
+    ]
+  }
+}
