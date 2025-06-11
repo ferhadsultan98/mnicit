@@ -8,7 +8,7 @@
   "home": {
     "heading": "Innovate, Excel in Competition, Achieve Success!",
     "paragraph": "We optimize your business processes with ERP systems, making your company more efficient and competitive. Our tailored and reliable solutions support your sustainable growth.",
-    "button": "Contact"
+    "button": "Partnership"
   },
   "services": {
     "title": "Our Services",
@@ -224,17 +224,17 @@
     "companyDescription": "We prepare your business for the future with modern IT solutions and professional services. Over 10 years of experience in technology.",
     "servicesTitle": "Our Services",
     "services": [
-      { "name": "SAP ERP Solutions", "link": "#" },
+      { "name": "Cybersecurity", "link": "#" },
       { "name": "Cloud Solutions", "link": "#" },
       { "name": "Web Development", "link": "#" },
       { "name": "Server Management", "link": "#" }
     ],
     "quickLinksTitle": "Quick Links",
     "quickLinks": [
-      { "name": "About Us"},
-      { "name": "Portfolio" },
-      { "name": "Blog" },
-      { "name": "Careers" }
+      { "name": "About Us", "link": "#" },
+      { "name": "Portfolio", "link": "#" },
+      { "name": "Blog", "link": "#" },
+      { "name": "Careers", "link": "#" }
     ],
     "contactTitle": "Contact",
     "contactInfo": [
@@ -243,8 +243,8 @@
       { "icon": "MapPin", "value": "85k Babak Ave, Baku" }
     ],
     "bottomLinks": [
-      { "name": "Privacy Policy"},
-      { "name": "Terms of Use" }
+      { "name": "Privacy Policy", "link": "#" },
+      { "name": "Terms of Use", "link": "#" }
     ],
     "socialLinks": [
       { "name": "Facebook" },

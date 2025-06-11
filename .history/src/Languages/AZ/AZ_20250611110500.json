@@ -8,7 +8,7 @@
   "home": {
     "heading": "İnnovasiya et, Rəqabətdə üstün ol, Uğur əldə et!",
     "paragraph": "ERP sistemləri ilə iş proseslərinizi optimallaşdırır, şirkətinizi daha səmərəli və rəqabətədavamlı hala gətiririk. Fərdiləşdirilmiş və etibarlı həllərimizlə davamlı inkişafınıza dəstək oluruq.",
-    "button": "Əlaqə"
+    "button": "Tərəfdaşlıq"
   },
   "services": {
     "title": "Xidmətlərimiz",
@@ -228,7 +228,7 @@
     "companyDescription": "Müasir IT həlləri və peşəkar xidmətlərlə biznesinizi gələcəyə hazırlayırıq. Texnologiya sahəsində 10+ il təcrübə.",
     "servicesTitle": "Xidmətlərimiz",
     "services": [
-      { "name": "SAP ERP Həlləri", "link": "#" },
+      { "name": "Kibertəhlükəsizlik", "link": "#" },
       { "name": "Cloud Həlləri", "link": "#" },
       { "name": "Web Development", "link": "#" },
       { "name": "Server İdarəetməsi", "link": "#" }

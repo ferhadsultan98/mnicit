@@ -98,7 +98,7 @@ const AboutSection = () => {
             </button>
           </div>
 
-          <div className="contentVisual">
+          {/* <div className="contentVisual">
             <div className="visualCard">
               <div className="cardHeader">
                 <Users className="cardHeaderIcon" />
@@ -114,12 +114,12 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="clientsSection"></div>
 
-        {/* <div className="achievementsSection">
+        <div className="achievementsSection">
           <div className="achievementsGrid">
             {achievements.map((achievement, index) => (
               <div key={index} className="achievementCard">
@@ -128,7 +128,7 @@ const AboutSection = () => {
               </div>
             ))}
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );

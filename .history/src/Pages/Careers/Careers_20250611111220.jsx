@@ -22,10 +22,7 @@ const CareersSection = () => {
   return (
     <section className="careersSection" id="careers">
       <div className="careersContainer">
-        {/* <div className="careersHeader">
-          <h2 className="careersTitle">{t("careers.title")}</h2>
-          <p className="careersSubtitle">{t("careers.subtitle")}</p>
-        </div>
+       
 
         <div className="cultureSection">
           <div className="cultureContent">
@@ -44,7 +41,7 @@ const CareersSection = () => {
               )}
             </div>
           </div>
-        </div> */}
+        </div>
 
         <div className="benefitsSection">
           <h3 className="benefitsTitle">{t("careers.benefitsTitle")}</h3>

@@ -119,7 +119,7 @@ const AboutSection = () => {
 
         <div className="clientsSection"></div>
 
-        {/* <div className="achievementsSection">
+        <div className="achievementsSection">
           <div className="achievementsGrid">
             {achievements.map((achievement, index) => (
               <div key={index} className="achievementCard">
@@ -128,7 +128,7 @@ const AboutSection = () => {
               </div>
             ))}
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );

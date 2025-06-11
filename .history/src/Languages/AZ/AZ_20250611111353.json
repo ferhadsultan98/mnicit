@@ -218,7 +218,7 @@
     ],
     "socialTitle": "Bizi İzləyin",
     "socialLinks": [
-      { "name": "LinkedIn", "link": "#" },
+      { "name": "LinkedIn"},
       { "name": "Twitter", "link": "#" },
       { "name": "Facebook", "link": "#" },
       { "name": "Veb Sayt", "link": "#" }

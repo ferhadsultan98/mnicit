@@ -22,29 +22,12 @@ const CareersSection = () => {
   return (
     <section className="careersSection" id="careers">
       <div className="careersContainer">
-        {/* <div className="careersHeader">
+        <div className="careersHeader">
           <h2 className="careersTitle">{t("careers.title")}</h2>
           <p className="careersSubtitle">{t("careers.subtitle")}</p>
         </div>
 
-        <div className="cultureSection">
-          <div className="cultureContent">
-            <div className="cultureText">
-              <h3>{t("careers.cultureTitle")}</h3>
-              <p>{t("careers.cultureText")}</p>
-            </div>
-            <div className="cultureStats">
-              {t("careers.cultureStats", { returnObjects: true }).map(
-                (stat, index) => (
-                  <div key={index} className="statItem">
-                    <span className="statNumber">{stat.number}</span>
-                    <span className="statLabel">{stat.label}</span>
-                  </div>
-                )
-              )}
-            </div>
-          </div>
-        </div> */}
+  
 
         <div className="benefitsSection">
           <h3 className="benefitsTitle">{t("careers.benefitsTitle")}</h3>
