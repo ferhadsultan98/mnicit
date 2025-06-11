@@ -210,7 +210,7 @@ $gray: #ecf0f1;
       transition: background 0.3s, color 0.3s;
 
       &.active {
-        color: #7992adb2;
+        color: #495d73b2;
         background: $gray;
       }
 
@@ -229,7 +229,7 @@ $gray: #ecf0f1;
         flex-direction: column;
         width: 30%;
         &.active {
-          background: #a0bcdacb;
+          background: #495d73cb;
           color: $white;
         }
 

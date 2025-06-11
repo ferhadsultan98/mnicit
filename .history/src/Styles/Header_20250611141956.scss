@@ -211,7 +211,7 @@ $gray: #ecf0f1;
 
       &.active {
         color: #7992adb2;
-        background: $gray;
+        background:red;
       }
 
       &:hover {
@@ -229,7 +229,7 @@ $gray: #ecf0f1;
         flex-direction: column;
         width: 30%;
         &.active {
-          background: #a0bcdacb;
+          background: #495d73cb;
           color: $white;
         }
 

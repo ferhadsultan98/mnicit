@@ -112,7 +112,7 @@ $gray: #ecf0f1;
       height: 2px;
       bottom: -4px;
       left: 0;
-      background-color: white;
+      background-color: #495d73cb;
       transition: width 0.3s ease-in-out;
     }
 
@@ -210,7 +210,7 @@ $gray: #ecf0f1;
       transition: background 0.3s, color 0.3s;
 
       &.active {
-        color: #7992adb2;
+        color: #495d73b2;
         background: $gray;
       }
 
@@ -229,7 +229,7 @@ $gray: #ecf0f1;
         flex-direction: column;
         width: 30%;
         &.active {
-          background: #a0bcdacb;
+          background: #495d73cb;
           color: $white;
         }
 
@@ -265,7 +265,7 @@ $gray: #ecf0f1;
     }
     .nav-menu {
       @media (max-width: 768px) {
-        background: #5a6d82;
+        background: #7e8fa1;
       }
     }
     .header-container {
